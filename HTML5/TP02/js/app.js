@@ -19,7 +19,7 @@ var EPSI = EPSI || function(){
 		});
 
 
-		$("#loading").html("Chargement en cours ...");
+		$("#loadingContent").html("Chargement en cours ...");
 		
 		var keyValues = "";
 		for (var i = 0; i < 20; i ++){
@@ -41,7 +41,7 @@ var EPSI = EPSI || function(){
 				var items = [];
 				$.each( data, function( key, val ) {
 					var jsonObject = JSON.parse(decodeURIComponent(val));
-				    items.push( "<li id='" + key + "'>" + jsonObject.value + "</li>" );
+				    items.push( "<li id='" + key + "'><i class='icon-exchange'></i><div class='content'>" + jsonObject.value + "</div></li>" );
 				    addObject(jsonObject);
 				});
 
@@ -53,7 +53,7 @@ var EPSI = EPSI || function(){
 				 $("#loading").hide();
 			})
 			.fail(function(jqXHR, textStatus, error){
-				$("#loading").html("Erreur pendant le chargement des données...");
+				$("#loadingContent").html("Erreur pendant le chargement des données...");
 				console.log("fail ! "+error);
 			});
 		}
@@ -113,10 +113,10 @@ var EPSI = EPSI || function(){
 		cursorRequest.onsuccess = function(e) {
 			var result = e.target.result;
 			if(!!result == false){
-				$("#loading").html("Aucune donnée chargée depuis la base");
+				$("#loadingContent").html("Aucune donnée chargée depuis la base");
 			  	return;
 			}
-			$("#list_ul").append("<li>"+result.value.value+" from DB</li>");
+			$("#list_ul").append("<li><i class='icon-hdd'></i><div class='content'>"+result.value.value+" from DB</div></li>");
 			result.continue();
 		};
 		cursorRequest.onerror = indexedDbEPSI.onerror;
