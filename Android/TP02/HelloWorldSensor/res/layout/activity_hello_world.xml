@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HelloWorldActivity" >
+
+    <Button
+        android:id="@+id/btnFirstListActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_first_activity" />
+    
+    <Button
+        android:id="@+id/btnGsonListActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFirstListActivity"
+        android:text="@string/btn_gson_activity" />
+    
+    <Button
+        android:id="@+id/btnServiceListActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGsonListActivity"
+        android:text="@string/btn_service_activity" />
+
+    <Button
+        android:id="@+id/btnMapActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnServiceListActivity"
+        android:text="@string/btn_maps_activity" />
+    
+    <Button
+        android:id="@+id/btnSensorActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMapActivity"
+        android:text="@string/btn_sensor_activity" />
+
+</RelativeLayout>
