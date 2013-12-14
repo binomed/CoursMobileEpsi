@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld</string>
+    <string name="title_activity_hello_world">HelloWorldActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_first_activity">List Activity</string>
+    <string name="btn_gson_activity">List Activity avec GSON</string>
+    <string name="btn_service_activity">List Activity avec GSON / Service et Base de donnée</string>
+    <string name="btn_maps_activity">Map Acitivity</string>
+    <string name="btn_sensor_activity">Sensors Acitivity</string>
+    <string name="Loading">Chargement des données en cours.</string>
+    <string name="database_read">Lecture de la base en cours.</string>
+    <string name="error">Aucune données à afficher</string>
+
+</resources>
