@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld</string>
+    <string name="title_activity_hello_world">HelloWorld Optimisation</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_first_activity">List Activity</string>
+    <string name="btn_list_opitm_activity">List Activity optimzed</string>
+    <string name="btn_first_fragment">List Fragment</string>
+    <string name="btn_list_opitm_fragment">List Fragment optimzed</string>
+    <string name="Loading">Loading data.</string>
+    <string name="error">No data to show</string>
+
+</resources>

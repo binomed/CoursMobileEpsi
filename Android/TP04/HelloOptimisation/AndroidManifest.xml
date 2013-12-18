@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="10"
         android:targetSdkVersion="18" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.epsi.i5.tp04.HelloWorldActivity"
+            android:name="com.epsi.i5.tp04.HelloWorldStartActivity"
             android:label="@string/title_activity_hello_world" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.epsi.i5.tp04.HelloWorldActivity" />
+        <activity
+            android:name="com.epsi.i5.tp04.HelloWorldTabletActivity" />
+        <activity
+            android:name="com.epsi.i5.tp04.HelloWorldPhoneActivity" />
+        <activity
             android:name="com.epsi.i5.tp04.HelloListActivity" />
+        <activity
+            android:name="com.epsi.i5.tp04.HelloListOptimActivity" />
       </application>
 
 </manifest>

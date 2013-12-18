@@ -13,33 +13,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_first_activity" />
-    
+     
     <Button
-        android:id="@+id/btnGsonListActivity"
+        android:id="@+id/btnOptimListActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnFirstListActivity"
-        android:text="@string/btn_gson_activity" />
-    
-    <Button
-        android:id="@+id/btnServiceListActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnGsonListActivity"
-        android:text="@string/btn_service_activity" />
+        android:text="@string/btn_list_opitm_activity" />
 
     <Button
-        android:id="@+id/btnMapActivity"
+        android:id="@+id/btnFirstListFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnServiceListActivity"
-        android:text="@string/btn_maps_activity" />
-    
+        android:layout_below="@+id/btnOptimListActivity"
+        android:text="@string/btn_list_opitm_fragment" />
     <Button
-        android:id="@+id/btnSensorActivity"
+        android:id="@+id/btnOptimListFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnMapActivity"
-        android:text="@string/btn_sensor_activity" />
+        android:layout_below="@+id/btnFirstListFragment"
+        android:text="@string/btn_list_opitm_fragment" />
 
 </RelativeLayout>
