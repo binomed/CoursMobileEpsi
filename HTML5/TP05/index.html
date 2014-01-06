@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" manifest="epsi.appcache">
 	<head>
 		<meta charset="utf-8">
 		<title>TP 05 - HTML5</title>
@@ -24,27 +24,25 @@
         ---------------- APP STYLES  ---------------------------
         ------------------------------------------------------ -->
         <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/loader.css">
         
 	</head>
 
 	<body>
 
-		<div class="content">
-
+		<div id="content">
 			<x-appbar id="custom-style">
 			    <header>Cours HTML5 - Responsive</header>
-			    <div class="show-mobile"><i class="icon-mobile"></i></div>
+			    <div id="mobile-tab" class="show-mobile"><i id="iconTab" class="icon-play"></i></div>
 			</x-appbar>
-			<div id="list">
-				<ul id="list_ul">
-				</ul>
+			<div id="main_content">
+				<div id="list">
+					<ul id="list_ul">
+					</ul>
+				</div>
+				<div id="details" class="hide">
+					Detail. En Attente de click.
+				</div>
 			</div>
-
-			<div id="details" class="hide">
-				Detail. En Attente de click.
-			</div>
-
 		</div>
 		
 		<script src="js/app.js"></script>		

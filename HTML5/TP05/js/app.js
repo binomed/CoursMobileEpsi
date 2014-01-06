@@ -8,19 +8,29 @@ var EPSI = EPSI || function(){
 
 	function pageLoad(){	
 
-		open();
+		
+		$("#mobile-tab").on("click", toggleVisibility);
 
-		$("#menu").on("click", function(){
-			getAllObjects();
-		});
+		function toggleVisibility(){
+			$('#list').toggleClass('hide');
+			$('#details').toggleClass('hide');			
+			if ($('#list').hasClass('hide')){
+				$('#iconTab').removeClass('icon-play');
+				$('#iconTab').addClass('icon-tasks');
+			}else{
+				$('#iconTab').addClass('icon-play');
+				$('#iconTab').removeClass('icon-tasks');
+			}
+		}
 
 
 		var keyValues = "";
 		for (var i = 0; i < 20; i ++){			
-			$("#list_ul").append("<li><i class='icon-info'></i><div class='content'>Donnée "+i+" :  Click me!</div></li>");
+			$("#list_ul").append("<li id='li"+i+"'><i class='icon-info'></i><div class='row'>Donnée "+i+" :  Click me!</div></li>");
 
-			$('li').on('click', function(){
-
+			$('li').on('click', function(event){
+				$('#details').html('élément cliqué : '+event.currentTarget.id);
+				toggleVisibility();
 			});
 		}
 

@@ -1,3 +1,9 @@
+/*
+*
+* PARTIE COMMUNE AUX 2 DESIGNS 
+*
+*/
+
 body{
 	padding: 0;
 	margin:0;
@@ -39,19 +45,73 @@ li div{
 
 }
 
-div#content{
-	position: relative;
+#main_content{
+	position: relative;	
+	height: calc(100%  - 30px);
+	width: 100%;
 }
 
+#content{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+div#list, div#details{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	border: thin solid black;
+}
+
+div#list{
+	overflow: auto;
+}
+
+/*
+*
+* PARTIE DESKTOP
+*
+*/
 
 div#list, div#details{
 	width: 50%;
 }
 
-div#list{
-	float:left;
+
+div#details{
+	left: 50%;
 }
 
+.show-mobile{
+	display: none;
+}
+
+.hide{
+	display: block;
+}
+
+/*
+*
+* PARTIE MOBILE
+*
+*/
 
 
-/*@media screen */
+
+@media screen and (max-width: 640px){
+
+	div#list, div#details{
+		width: 100%;
+		left: 0;
+	}
+
+	.show-mobile{
+		display: block;
+	}
+
+	.hide{
+		display: none;
+	}
+
+}

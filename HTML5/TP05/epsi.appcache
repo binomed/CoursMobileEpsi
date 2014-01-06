@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# 2013-01-06 23:18
+
+# Application
+/css/app.css
+/js/app.js
+
+#Libs
+/libs/brick/brick.css
+/libs/brick/brick.js
+/libs/font-awesome/css/font-awesome-ie7.css
+/libs/font-awesome/css/font-awesome-ie7.min.css
+/libs/font-awesome/css/font-awesome.css
+/libs/font-awesome/css/font-awesome.min.css
+/libs/font-awesome/font/fontawesome-webfont.eot?v=3.2.1
+/libs/font-awesome/font/fontawesome-webfont.svg?v=3.2.1
+/libs/font-awesome/font/fontawesome-webfont.ttf?v=3.2.1
+/libs/font-awesome/font/fontawesome-webfont.woff?v=3.2.1
+/libs/font-awesome/font/FontAwesome.otf
+/libs/jquery/jquery-1.10.2.min.js
+/libs/jquery/jquery-1.10.2.min.map
+
+NETWORK:
+*
+
