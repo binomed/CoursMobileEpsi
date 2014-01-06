@@ -1,0 +1,57 @@
+body{
+	padding: 0;
+	margin:0;
+	background-color: #F0F8FF;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+x-appbar div{
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+}
+
+#custom-style{
+	color: white;
+	font-weight: 400;
+
+}
+
+li{
+	padding-left: 50px;
+	border-bottom: solid 1px black;
+	line-height: 40px;
+	height: 40px;
+	position: relative;	
+}
+
+
+li div{
+	margin-left: 20px;
+	position: absolute;
+	left: 70px;
+	top: 0px;
+
+}
+
+div#content{
+	position: relative;
+}
+
+
+div#list, div#details{
+	width: 50%;
+}
+
+div#list{
+	float:left;
+}
+
+
+
+/*@media screen */
