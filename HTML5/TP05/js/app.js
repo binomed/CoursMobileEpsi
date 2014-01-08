@@ -28,11 +28,11 @@ var EPSI = EPSI || function(){
 		for (var i = 0; i < 20; i ++){			
 			$("#list_ul").append("<li id='li"+i+"'><i class='icon-info'></i><div class='row'>Donnée "+i+" :  Click me!</div></li>");
 
-			$('li').on('click', function(event){
-				$('#details').html('élément cliqué : '+event.currentTarget.id);
-				toggleVisibility();
-			});
 		}
+		$('li').on('click', function(event){
+			$('#details').html('élément cliqué : '+event.currentTarget.id);
+			toggleVisibility();
+		});
 
 	
 		
